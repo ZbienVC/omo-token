@@ -60,7 +60,7 @@ export default function Story() {
           >
             {/* Visual Placeholder for a mystical savannah scene */}
             <div className="absolute inset-0 bg-gradient-to-br from-omo-purple/30 to-omo-blue/10 mix-blend-overlay" />
-            <div className="absolute inset-0 bg-[url('https://i.natgeofe.com/n/6df5b9e8-7ba4-4c6e-821f-829d5b00c3b8/white-giraffe-kenya.jpg')] bg-cover bg-center opacity-40 grayscale" />
+            <div className="absolute inset-0 bg-[url('https://ichef.bbci.co.uk/news/1024/cpsprodpb/175C5/production/_111200259_white_giraffe_hirola_2.jpg')] bg-cover bg-center opacity-40 grayscale" />
           </motion.div>
 
         </div>
