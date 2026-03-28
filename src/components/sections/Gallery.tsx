@@ -6,24 +6,19 @@ import { ChevronRight } from "lucide-react";
 
 const IMAGES = [
   {
-    src: "/omo-1.jpg",
-    label: "Omo — The White One",
-    caption: "The rarest creature on earth. Leucistic, not albino — her dark eyes give her away.",
-  },
-  {
     src: "/omo-2.jpg",
-    label: "Standing Tall",
-    caption: "Omo photographed in Tarangire National Park, Tanzania. First spotted January 2015.",
+    label: "Omo — The White One",
+    caption: "First photographed in January 2015 in Tarangire National Park. Leucistic, not albino — her dark eyes give her away.",
   },
   {
     src: "/omo-3.jpg",
     label: "One of One",
-    caption: "Omo beside a normal giraffe. The contrast is impossible to miss.",
+    caption: "Omo beside a normal giraffe. The contrast is impossible to miss — ghostly white against rich brown.",
   },
   {
     src: "/omo-4.jpg",
     label: "Guarded Day & Night",
-    caption: "\"Omo is believed to be the only white giraffe left on Earth, guarded day and night to stay safe in the wild.\"",
+    caption: "Omo is believed to be the only white giraffe left on Earth, watched around the clock to stay safe in the wild.",
   },
   {
     src: "/omo-5.jpg",
@@ -71,7 +66,7 @@ export default function Gallery() {
             className="text-sm font-medium"
             style={{ color: 'rgba(253,250,243,0.45)' }}
           >
-            Real photographs. Tarangire, Tanzania.
+            Real photographs of Omo. Tarangire, Tanzania.
           </motion.p>
         </div>
         <div className="hidden md:flex gap-3">
@@ -115,4 +110,3 @@ export default function Gallery() {
     </section>
   );
 }
-
