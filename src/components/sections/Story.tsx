@@ -52,7 +52,7 @@ export default function Story() {
             className="order-1 md:order-2 h-80 md:h-[420px] rounded-3xl overflow-hidden relative"
             style={{ border: '1px solid rgba(212,148,58,0.12)' }}
           >
-            <img src="/omo-2.jpg" alt="Tarangire savannah"
+            <img src="/omo-7.jpg" alt="Tarangire savannah"
               className="absolute inset-0 w-full h-full object-cover grayscale" style={{ filter: 'grayscale(0.4) sepia(0.3)' }} />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,18,8,0.8) 0%, rgba(212,148,58,0.1) 100%)' }} />
             <div className="absolute bottom-5 left-6">
@@ -116,6 +116,7 @@ export default function Story() {
     </section>
   );
 }
+
 
 
 

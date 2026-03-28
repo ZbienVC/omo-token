@@ -35,6 +35,11 @@ const IMAGES = [
     label: "Newsweek · 2025",
     caption: "Omo continues to survive in the wild, becoming a global symbol of rarity and resilience.",
   },
+  {
+    src: "/omo-7.jpg",
+    label: "Apart From the Herd",
+    caption: "Standing apart from the crowd since 2015. Just like $OMO.",
+  },
 ];
 
 export default function Gallery() {
