@@ -91,9 +91,9 @@ export default function Hero() {
             <TrendingUp className="w-5 h-5 opacity-80" />
           </Button>
         </a>
-        <a href="#" className="w-full sm:w-auto">
-          <Button variant="secondary" className="w-full text-lg h-14">
-            Community
+        <a href="https://dexscreener.com/solana/65fgf5zbssh63dhk9dfk5arpgme88a3zzq6cwhdpdejo" target="_blank" className="w-full sm:w-auto">
+          <Button variant="secondary" className="w-full text-lg h-14 border-sky-400/30">
+            Chart
             <Users className="w-5 h-5 opacity-80" />
           </Button>
         </a>

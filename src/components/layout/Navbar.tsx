@@ -31,6 +31,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-6 text-sm font-medium text-sky-100">
         <Link href="#story" className="hover:text-omo-gold transition-colors">Story</Link>
         <Link href="#tokenomics" className="hover:text-omo-gold transition-colors">Tokenomics</Link>
+        <Link href="#chart" className="hover:text-omo-gold transition-colors">Chart</Link>
         <Link href="#gallery" className="hover:text-omo-gold transition-colors">Gallery</Link>
       </div>
 
