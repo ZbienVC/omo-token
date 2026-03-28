@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <a href="https://x.com/OmoTokenSol" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-omo-blue transition-colors border border-white/5">
+          <a href="https://x.com/i/communities/2037566575344226673" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-omo-blue transition-colors border border-white/5">
             <Hash className="w-5 h-5" />
           </a>
           <a href="https://t.me/OmoTokenPortal" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-omo-blue transition-colors border border-white/5">
