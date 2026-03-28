@@ -12,7 +12,7 @@ const IMAGES = [
     caption: "A leucistic giraffe like Omo — pale coat, dark eyes. One of one in Tarangire.",
   },
   {
-    src: "https://source.unsplash.com/800x600/?giraffe,masai,tanzania",
+    src: "/omo-2.jpg",
     label: "Masai Giraffe",
     caption: "Omo's species — the Masai giraffe of Tanzania's Tarangire National Park.",
   },
@@ -106,4 +106,5 @@ export default function Gallery() {
     </section>
   );
 }
+
 
