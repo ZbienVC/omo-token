@@ -25,7 +25,7 @@ export default function Story() {
             The Last of His Kind
           </h2>
           <p className="text-lg md:text-2xl text-sky-100/80 font-medium max-w-2xl mx-auto leading-relaxed">
-            In 2017, the world discovered a miracle in Kenya's Ishaqbini Hirola Conservancy: three completely white giraffes. In 2020, poachers took two of them. OMO is the last surviving male on earth.
+            In 2016, the world discovered a miracle wandering the savannah of Tarangire National Park in Tanzania: a completely white giraffe named Omo.
           </p>
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function Story() {
               A True Survivor
             </h3>
             <p className="text-sky-100/60 leading-relaxed text-lg">
-              Born with Leucism—a rare genetic trait causing pigment loss but leaving his dark eyes intact—OMO is now guarded 24/7 by armed rangers and fitted with a GPS tracker. Hunted for his rarity, he survives against all odds.
+              Born with Leucism—a rare genetic trait causing pigment loss but leaving her dark eyes intact—Omo roams the acacia woodlands of Tanzania. Against poachers and predators, she survives against all odds as a symbol of the wild.
             </p>
           </motion.div>
 
@@ -60,7 +60,7 @@ export default function Story() {
           >
             {/* Visual Placeholder for a mystical savannah scene */}
             <div className="absolute inset-0 bg-gradient-to-br from-omo-purple/30 to-omo-blue/10 mix-blend-overlay" />
-            <div className="absolute inset-0 bg-[url('https://ichef.bbci.co.uk/news/1024/cpsprodpb/175C5/production/_111200259_white_giraffe_hirola_2.jpg')] bg-cover bg-center opacity-40 grayscale" />
+            <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/eb/White_giraffe_in_Ishaqbini_Hirola_Conservancy.jpg')] bg-cover bg-center opacity-40 grayscale" />
           </motion.div>
 
         </div>
@@ -107,4 +107,6 @@ export default function Story() {
     </section>
   );
 }
+
+
 
