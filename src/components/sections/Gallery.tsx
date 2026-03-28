@@ -6,10 +6,11 @@ import { ChevronRight, Maximize } from "lucide-react";
 
 export default function Gallery() {
   const images = [
-    "https://images.unsplash.com/photo-1547471080-7fc2caa01a73?auto=format&fit=crop&q=80&w=800", // Savannah
-    "https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&q=80&w=800", // Giraffe close up
-    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800", // Magical lighting
-    "https://images.unsplash.com/photo-1550742517-5e16279f0412?auto=format&fit=crop&q=80&w=800", // Abstract nature
+    "https://i.natgeofe.com/n/6df5b9e8-7ba4-4c6e-821f-829d5b00c3b8/white-giraffe-kenya.jpg", // National Geographic Omo
+    "https://media.npr.org/photos/2017/09/14/hcp-white-giraffes-1_custom-9c869e96e95143a91834272183c51ef67edaa1a7.jpg", // Omo and calf
+    "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200310150937-01-white-giraffes-poached-kenya.jpg", // CNN report image
+    "https://s.yimg.com/ny/api/res/1.2/aZpMInm2vN.2Oq378.O3oQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2020-03/79f5d370-639a-11ea-bfcf-22d717f692db", // Yahoo news image
+    "https://ca-times.brightspotcdn.com/dims4/default/d817457/2147483647/strip/true/crop/1000x563+0+105/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd6%2Fa6%2F5c7cf99e4f58999335e2f758ba16%2Fla-1505342410-y95t2x7hhe-snap-image.jpg" // LA Times image
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
