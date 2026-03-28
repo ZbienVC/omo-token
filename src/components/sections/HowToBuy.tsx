@@ -8,46 +8,54 @@ export default function HowToBuy() {
     {
       num: "01",
       title: "Get Phantom Wallet",
-      text: "Download Phantom or your wallet of choice. Fund it with some Solana.",
-      icon: <Wallet className="w-8 h-8 text-omo-blue" />,
+      text: "Download Phantom. Fund it with some Solana (SOL) from any exchange.",
+      icon: <Wallet className="w-7 h-7" style={{ color: '#D4943A' }} />,
+      glow: 'rgba(212,148,58,0.08)',
+      border: 'rgba(212,148,58,0.18)',
     },
     {
       num: "02",
       title: "Go to Pump.fun",
-      text: "Open your browser and navigate to the Raydium/Pump.fun interface.",
-      icon: <Search className="w-8 h-8 text-omo-sunset" />,
+      text: "Navigate to pump.fun in your browser and connect your wallet.",
+      icon: <Search className="w-7 h-7" style={{ color: '#C0562A' }} />,
+      glow: 'rgba(192,86,42,0.08)',
+      border: 'rgba(192,86,42,0.18)',
     },
     {
       num: "03",
-      title: "Paste Contract",
-      text: "Paste the $OMO token address to ensure you are buying the real one.",
-      icon: <Coins className="w-8 h-8 text-omo-purple" />,
+      title: "Paste CA",
+      text: "Search for $OMO or paste the contract address to find the right token.",
+      icon: <Coins className="w-7 h-7" style={{ color: '#8C9970' }} />,
+      glow: 'rgba(140,153,112,0.08)',
+      border: 'rgba(140,153,112,0.18)',
     },
     {
       num: "04",
-      title: "Buy $OMO",
-      text: "Swap SOL for $OMO. Hold onto the rarest asset on the blockchain.",
-      icon: <Sparkles className="w-8 h-8 text-omo-gold" />,
+      title: "Own the Legend",
+      text: "Swap SOL for $OMO. Hold the rarest creature on the blockchain.",
+      icon: <Sparkles className="w-7 h-7" style={{ color: '#D4943A' }} />,
+      glow: 'rgba(212,148,58,0.08)',
+      border: 'rgba(212,148,58,0.18)',
     },
   ];
 
   return (
-    <section id="how-to-buy" className="py-32 md:py-48 px-4 md:px-8 relative z-10 overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-omo-blue/5 rounded-full blur-[150px] pointer-events-none" />
+    <section id="how-to-buy" className="py-32 md:py-40 px-4 md:px-8 relative z-10 overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl rounded-full pointer-events-none opacity-30"
+        style={{ background: 'radial-gradient(circle, rgba(212,148,58,0.08) 0%, transparent 70%)' }} />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-fredoka)] text-white glow-text mb-6">
-            How to secure $OMO
+          <h2 className="text-4xl md:text-6xl font-bold font-[family-name:var(--font-fredoka)] glow-text mb-6" style={{ color: '#FDFAF3' }}>
+            How to Own $OMO
           </h2>
-          <p className="text-lg md:text-xl text-sky-100/70 font-medium max-w-2xl mx-auto">
-            You don't just buy $OMO. You rescue him. Here's the path.
+          <p className="text-lg md:text-xl font-medium max-w-2xl mx-auto" style={{ color: 'rgba(253,250,243,0.55)' }}>
+            You don't just buy $OMO. You become a guardian of the last white giraffe.
           </p>
         </motion.div>
 
@@ -58,28 +66,24 @@ export default function HowToBuy() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              whileHover={{ y: -10 }}
-              className="relative p-8 rounded-[2rem] glass-card border border-white/10 hover:border-white/20 transition-all group overflow-hidden"
+              transition={{ delay: i * 0.12 }}
+              whileHover={{ y: -8 }}
+              className="relative p-8 rounded-[2rem] overflow-hidden group transition-all"
+              style={{ background: step.glow, border: `1px solid ${step.border}`, backdropFilter: 'blur(14px)' }}
             >
-              <div className="absolute top-0 right-0 p-6 text-7xl font-black text-white/[0.03] select-none font-[family-name:var(--font-fredoka)] transition-transform group-hover:scale-110 group-hover:text-white/[0.05]">
+              <div className="absolute top-4 right-5 text-7xl font-black select-none font-[family-name:var(--font-fredoka)] transition-transform group-hover:scale-110"
+                style={{ color: 'rgba(212,148,58,0.04)' }}>
                 {step.num}
               </div>
-              
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 relative z-10 shadow-lg group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-7 relative z-10"
+                style={{ background: 'rgba(26,18,8,0.7)', border: '1px solid rgba(212,148,58,0.1)' }}>
                 {step.icon}
               </div>
-              
-              <h3 className="text-2xl font-bold text-white mb-3 relative z-10 tracking-tight">
-                {step.title}
-              </h3>
-              <p className="text-sky-100/60 font-medium leading-relaxed relative z-10">
-                {step.text}
-              </p>
+              <h3 className="text-xl font-bold mb-3 relative z-10 tracking-tight" style={{ color: '#FDFAF3' }}>{step.title}</h3>
+              <p className="font-medium leading-relaxed relative z-10" style={{ color: 'rgba(253,250,243,0.5)' }}>{step.text}</p>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

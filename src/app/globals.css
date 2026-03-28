@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-omo-blue: #72A0C1; /* Acacia sky */
-  --color-omo-gold: #E5B15D; /* Savannah gold */
-  --color-omo-purple: #5A3A31; /* Earthy brown / bark */
-  --color-omo-sunset: #D96C4A; /* Tarangire sunset */
-  --color-omo-sky: #8C9970; /* Olive / Sage green */
+  --color-omo-gold: #D4943A;       /* Dry savannah grass */
+  --color-omo-sunset: #C0562A;     /* Tarangire sunset / baobab red */
+  --color-omo-earth: #7A5C3A;      /* Rich red-brown soil */
+  --color-omo-sage: #8C9970;       /* Acacia leaf green */
+  --color-omo-bone: #FDFAF3;       /* Bleached bone / pale sky */
+  --color-omo-sky: #B8C4A0;        /* Soft savannah haze */
+  --color-omo-blue: #72A0C1;       /* Rare cool sky during dry season */
 }
 
 :root {
-  --background: #1C1914; /* Deep earth/night instead of space blue */
-  --foreground: #FDFBF7; /* Off-white / bone */
+  --background: #1A1208;
+  --foreground: #FDFAF3;
 }
 
 body {
@@ -20,68 +22,51 @@ body {
   overflow-x: hidden;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #1C1914;
-}
-::-webkit-scrollbar-thumb {
-  background: #E5B15D;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #D96C4A;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1A1208; }
+::-webkit-scrollbar-thumb { background: #D4943A; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #C0562A; }
 
-/* Glowing text utility */
 .glow-text {
-  text-shadow: 0 0 10px rgba(229, 177, 93, 0.5), 0 0 20px rgba(229, 177, 93, 0.3);
+  text-shadow: 0 0 10px rgba(212, 148, 58, 0.5), 0 0 28px rgba(212, 148, 58, 0.25);
 }
 
-.glow-text-gold {
-  text-shadow: 0 0 10px rgba(217, 108, 74, 0.5), 0 0 20px rgba(217, 108, 74, 0.3);
+.glow-text-sunset {
+  text-shadow: 0 0 10px rgba(192, 86, 42, 0.5), 0 0 24px rgba(192, 86, 42, 0.3);
 }
 
-/* Mystical gradient mesh background */
+/* Tarangire savannah gradient sky */
 .mystical-bg {
-  background: 
-    radial-gradient(circle at 15% 50%, rgba(229, 177, 93, 0.1), transparent 40%),
-    radial-gradient(circle at 85% 30%, rgba(217, 108, 74, 0.1), transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(140, 153, 112, 0.1), transparent 50%);
-  background-color: #1C1914;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(212,148,58,0.14) 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 20%, rgba(192,86,42,0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 90%, rgba(122,92,58,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 80%, rgba(140,153,112,0.08) 0%, transparent 40%);
+  background-color: #1A1208;
   background-attachment: fixed;
 }
 
-/* Animations */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+/* Glass cards — warm earth tones */
+.glass-card {
+  background: rgba(40, 28, 12, 0.65);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 148, 58, 0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+@keyframes float {
+  0%  { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100%{ transform: translateY(0px); }
 }
+.animate-float { animation: float 6s ease-in-out infinite; }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 15px rgba(229,177,93,0.3); }
-  50% { box-shadow: 0 0 30px rgba(229,177,93,0.6); }
+  0%, 100% { box-shadow: 0 0 15px rgba(212,148,58,0.3); }
+  50%       { box-shadow: 0 0 35px rgba(212,148,58,0.65); }
 }
-
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
