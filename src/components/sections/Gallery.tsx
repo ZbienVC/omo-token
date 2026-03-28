@@ -4,32 +4,26 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { ChevronRight } from "lucide-react";
 
-// Using Unsplash Source API — these query for specific subjects and always return relevant images
 const IMAGES = [
   {
     src: "/omo-1.jpg",
     label: "Omo — The White One",
-    caption: "A leucistic giraffe like Omo — pale coat, dark eyes. One of one in Tarangire.",
+    caption: "The rarest creature on earth. Leucistic, not albino — her dark eyes give her away.",
   },
   {
     src: "/omo-2.jpg",
-    label: "Masai Giraffe",
-    caption: "Omo's species — the Masai giraffe of Tanzania's Tarangire National Park.",
+    label: "Standing Tall",
+    caption: "Omo photographed in Tarangire National Park, Tanzania. First spotted January 2015.",
   },
   {
     src: "/omo-3.jpg",
-    label: "Walking the Plains",
-    caption: "First spotted January 2015. Tarangire, Tanzania — Omo's home.",
+    label: "One of One",
+    caption: "Omo beside a normal giraffe. The contrast is impossible to miss.",
   },
   {
-    src: "https://source.unsplash.com/800x600/?giraffe,acacia,kenya",
-    label: "Among the Acacias",
-    caption: "She travels with her herd. They don't treat her differently.",
-  },
-  {
-    src: "https://source.unsplash.com/800x600/?giraffe,africa,sunset",
-    label: "Golden Hour",
-    caption: "As rare as the light. As rare as Omo.",
+    src: "/omo-4.jpg",
+    label: "Guarded Day & Night",
+    caption: "\"Omo is believed to be the only white giraffe left on Earth, guarded day and night to stay safe in the wild.\"",
   },
 ];
 
@@ -62,7 +56,7 @@ export default function Gallery() {
             className="text-sm font-medium"
             style={{ color: 'rgba(253,250,243,0.45)' }}
           >
-            Proof of existence. Tarangire, Tanzania.
+            Real photographs. Tarangire, Tanzania.
           </motion.p>
         </div>
         <div className="hidden md:flex gap-3">
@@ -87,17 +81,17 @@ export default function Gallery() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
             className="relative shrink-0 snap-center rounded-3xl overflow-hidden group"
-            style={{ width: 320, height: 420, border: '1px solid rgba(212,148,58,0.1)' }}
+            style={{ width: 320, height: 420, border: '1px solid rgba(212,148,58,0.15)' }}
           >
             <img
               src={img.src}
               alt={img.label}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-              <p className="font-bold text-sm mb-1" style={{ color: '#D4943A' }}>{img.label}</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="font-bold text-sm mb-1.5" style={{ color: '#D4943A' }}>{img.label}</p>
               <p className="text-xs leading-relaxed" style={{ color: 'rgba(253,250,243,0.7)' }}>{img.caption}</p>
             </div>
           </motion.div>
@@ -106,6 +100,3 @@ export default function Gallery() {
     </section>
   );
 }
-
-
-

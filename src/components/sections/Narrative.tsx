@@ -32,15 +32,13 @@ export default function Narrative() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="relative h-[400px] md:h-[600px] rounded-3xl glass-card overflow-hidden flex items-center justify-center border border-white/10"
+          className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden border"
+          style={{ borderColor: 'rgba(212,148,58,0.15)' }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-omo-blue/20 to-transparent" />
-          <h2 className="text-6xl md:text-8xl font-[family-name:var(--font-fredoka)] font-bold text-white/10 select-none tracking-widest absolute">
-            RARE
-          </h2>
-          <div className="relative z-10 text-center flex flex-col items-center">
-            <Sparkles className="w-16 h-16 text-omo-gold mb-6 animate-pulse-glow rounded-full" />
-            <p className="text-2xl md:text-4xl font-bold text-white max-w-sm leading-tight px-6 drop-shadow-lg font-[family-name:var(--font-inter)]">
+          <img src="/omo-3.jpg" alt="Omo the white giraffe" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,18,8,0.85) 0%, rgba(26,18,8,0.3) 60%, transparent 100%)' }} />
+          <div className="absolute bottom-8 left-8 right-8 text-left">
+            <p className="text-xl md:text-2xl font-bold leading-snug drop-shadow-lg" style={{ color: '#FDFAF3' }}>
               "There are billions of dogs. There is only one OMO."
             </p>
           </div>
