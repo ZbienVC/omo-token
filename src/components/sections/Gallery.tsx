@@ -30,6 +30,11 @@ const IMAGES = [
     label: "The Last One",
     caption: "The rarest photograph in the world. Omo — the only white giraffe on earth.",
   },
+  {
+    src: "/omo-6.jpg",
+    label: "Newsweek · 2025",
+    caption: "Omo continues to survive in the wild, becoming a global symbol of rarity and resilience.",
+  },
 ];
 
 export default function Gallery() {
