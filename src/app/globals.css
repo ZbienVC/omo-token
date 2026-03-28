@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-omo-blue: #6EC1FF;
+  --color-omo-gold: #F5D06F;
+  --color-omo-purple: #B28DFF;
+  --color-omo-sunset: #FF9B71;
+  --color-omo-sky: #E6F4FF;
+}
+
+:root {
+  --background: #0B1121; /* Very dark blue for mystical contrast */
+  --foreground: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1121;
+}
+::-webkit-scrollbar-thumb {
+  background: #6EC1FF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5D06F;
+}
+
+/* Glowing text utility */
+.glow-text {
+  text-shadow: 0 0 10px rgba(110, 193, 255, 0.5), 0 0 20px rgba(110, 193, 255, 0.3);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 10px rgba(245, 208, 111, 0.5), 0 0 20px rgba(245, 208, 111, 0.3);
+}
+
+/* Mystical gradient mesh background */
+.mystical-bg {
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(110, 193, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(178, 141, 255, 0.15), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(245, 208, 111, 0.1), transparent 50%);
+  background-color: #0B1121;
+  background-attachment: fixed;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(110,193,255,0.4); }
+  50% { box-shadow: 0 0 30px rgba(110,193,255,0.8); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
