@@ -52,7 +52,7 @@ export default function Story() {
             className="order-1 md:order-2 h-80 md:h-[420px] rounded-3xl overflow-hidden relative"
             style={{ border: '1px solid rgba(212,148,58,0.12)' }}
           >
-            <img src="https://images.unsplash.com/photo-1547471080-7fc2caa01a73?auto=format&fit=crop&w=900&q=80" alt="Tarangire savannah"
+            <img src="https://source.unsplash.com/900x600/?tarangire,tanzania,giraffe,savannah" alt="Tarangire savannah"
               className="absolute inset-0 w-full h-full object-cover grayscale" style={{ filter: 'grayscale(0.4) sepia(0.3)' }} />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,18,8,0.8) 0%, rgba(212,148,58,0.1) 100%)' }} />
             <div className="absolute bottom-5 left-6">
@@ -71,7 +71,7 @@ export default function Story() {
             className="h-80 md:h-[420px] rounded-3xl overflow-hidden relative"
             style={{ border: '1px solid rgba(212,148,58,0.12)' }}
           >
-            <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=900&q=80" alt="Masai giraffe"
+            <img src="https://source.unsplash.com/900x600/?giraffe,africa,white,plains" alt="Masai giraffe"
               className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(0.7)' }} />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(212,148,58,0.15), transparent 60%)' }} />
           </motion.div>
@@ -116,3 +116,5 @@ export default function Story() {
     </section>
   );
 }
+
+

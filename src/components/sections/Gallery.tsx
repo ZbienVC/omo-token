@@ -4,31 +4,32 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { ChevronRight } from "lucide-react";
 
+// Using Unsplash Source API — these query for specific subjects and always return relevant images
 const IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1547471080-7fc2caa01a73?auto=format&fit=crop&w=800&q=80",
-    label: "Tarangire Plains",
-    caption: "Omo's home. The dry savannah of Tarangire National Park.",
+    src: "https://source.unsplash.com/800x600/?giraffe,white,africa",
+    label: "Omo — The White One",
+    caption: "A leucistic giraffe like Omo — pale coat, dark eyes. One of one in Tarangire.",
   },
   {
-    src: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80",
-    label: "The Lone Giraffe",
-    caption: "A Masai giraffe — the same species as Omo — surveys the acacia landscape.",
+    src: "https://source.unsplash.com/800x600/?giraffe,masai,tanzania",
+    label: "Masai Giraffe",
+    caption: "Omo's species — the Masai giraffe of Tanzania's Tarangire National Park.",
   },
   {
-    src: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
-    label: "African Sunset",
-    caption: "Tarangire skies. The backdrop of Omo's world.",
+    src: "https://source.unsplash.com/800x600/?giraffe,savannah,tarangire",
+    label: "Walking the Plains",
+    caption: "First spotted January 2015. Tarangire, Tanzania — Omo's home.",
   },
   {
-    src: "https://images.unsplash.com/photo-1612175593685-5f70dd4a93cf?auto=format&fit=crop&w=800&q=80",
-    label: "One of One",
-    caption: "Leucism — no pigment, dark eyes. This is Omo.",
+    src: "https://source.unsplash.com/800x600/?giraffe,acacia,kenya",
+    label: "Among the Acacias",
+    caption: "She travels with her herd. They don't treat her differently.",
   },
   {
-    src: "https://images.unsplash.com/photo-1547970810-dc1eac37d174?auto=format&fit=crop&w=800&q=80",
-    label: "Wild & Free",
-    caption: "The acacia woodlands of East Africa. Omo roams here.",
+    src: "https://source.unsplash.com/800x600/?giraffe,africa,sunset",
+    label: "Golden Hour",
+    caption: "As rare as the light. As rare as Omo.",
   },
 ];
 
@@ -63,16 +64,6 @@ export default function Gallery() {
           >
             Proof of existence. Tarangire, Tanzania.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="text-xs mt-2 italic"
-            style={{ color: 'rgba(253,250,243,0.25)' }}
-          >
-            Add real Omo photos by placing images in the <code className="font-mono">/public</code> folder after deployment.
-          </motion.p>
         </div>
         <div className="hidden md:flex gap-3">
           <button onClick={() => scroll(-1)} className="w-11 h-11 rounded-full flex items-center justify-center rotate-180 transition-all hover:scale-110"
@@ -102,6 +93,7 @@ export default function Gallery() {
               src={img.src}
               alt={img.label}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
