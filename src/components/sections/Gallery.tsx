@@ -25,6 +25,11 @@ const IMAGES = [
     label: "Guarded Day & Night",
     caption: "\"Omo is believed to be the only white giraffe left on Earth, guarded day and night to stay safe in the wild.\"",
   },
+  {
+    src: "/omo-5.jpg",
+    label: "The Last One",
+    caption: "The rarest photograph in the world. Omo — the only white giraffe on earth.",
+  },
 ];
 
 export default function Gallery() {
@@ -100,3 +105,4 @@ export default function Gallery() {
     </section>
   );
 }
+
