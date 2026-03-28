@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 // Using Unsplash Source API — these query for specific subjects and always return relevant images
 const IMAGES = [
   {
-    src: "https://source.unsplash.com/800x600/?giraffe,white,africa",
+    src: "/omo-1.jpg",
     label: "Omo — The White One",
     caption: "A leucistic giraffe like Omo — pale coat, dark eyes. One of one in Tarangire.",
   },
@@ -106,3 +106,4 @@ export default function Gallery() {
     </section>
   );
 }
+

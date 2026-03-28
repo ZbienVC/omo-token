@@ -71,8 +71,8 @@ export default function Story() {
             className="h-80 md:h-[420px] rounded-3xl overflow-hidden relative"
             style={{ border: '1px solid rgba(212,148,58,0.12)' }}
           >
-            <img src="https://source.unsplash.com/900x600/?giraffe,africa,white,plains" alt="Masai giraffe"
-              className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(0.7)' }} />
+            <img src="/omo-1.jpg" alt="Masai giraffe"
+              className="absolute inset-0 w-full h-full object-cover" style={{ objectFit: 'cover', objectPosition: 'center' }} />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(212,148,58,0.15), transparent 60%)' }} />
           </motion.div>
 
@@ -116,5 +116,6 @@ export default function Story() {
     </section>
   );
 }
+
 
 

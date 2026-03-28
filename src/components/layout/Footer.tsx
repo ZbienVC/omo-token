@@ -31,11 +31,6 @@ export default function Footer() {
               style={{ background: 'rgba(212,148,58,0.08)', border: '1px solid rgba(212,148,58,0.2)', color: '#D4943A' }}>
               <Hash className="w-5 h-5" />
             </a>
-            <a href="https://t.me/OmoTokenPortal" target="_blank" rel="noreferrer"
-              className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
-              style={{ background: 'rgba(212,148,58,0.08)', border: '1px solid rgba(212,148,58,0.2)', color: '#D4943A' }}>
-              <Send className="w-5 h-5" />
-            </a>
           </div>
           <a href="https://dexscreener.com/solana/65fgf5zbssh63dhk9dfk5arpgme88a3zzq6cwhdpdejo"
             target="_blank" rel="noreferrer"
@@ -53,3 +48,4 @@ export default function Footer() {
     </footer>
   );
 }
+
