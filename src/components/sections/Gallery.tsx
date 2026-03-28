@@ -17,7 +17,7 @@ const IMAGES = [
     caption: "Omo's species — the Masai giraffe of Tanzania's Tarangire National Park.",
   },
   {
-    src: "https://source.unsplash.com/800x600/?giraffe,savannah,tarangire",
+    src: "/omo-3.jpg",
     label: "Walking the Plains",
     caption: "First spotted January 2015. Tarangire, Tanzania — Omo's home.",
   },
@@ -106,5 +106,6 @@ export default function Gallery() {
     </section>
   );
 }
+
 
 
